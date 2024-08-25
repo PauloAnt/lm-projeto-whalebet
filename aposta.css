@@ -1,72 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    
 }
-:root{
+
+:root {
     --color-azul-claro: #80b9c1;
     --color-verde-azulado: #387b83;
     --color-cinza: #97a3ad;
     --color-cinza-claro: #d6dce5;
-    --color-preto:#131c24;
+    --color-preto: #131c24;
     --color-azul: #1c2a36;
 }
-body{
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 8fr;
+    min-height: 100vh;
+    margin: 0;
     background-color: var(--color-preto);
     color: var(--color-cinza-claro);
     font-family: "Roboto", sans-serif;
 }
-header{
+
+
+header {
     background-color: var(--color-azul);
+    grid-column: 1 / -1;
 }
-header ul{
+
+header ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
     padding: 30px 0;
 }
-header ul li, #logo{
+
+header ul li, #logo {
     font-size: 22px;
     margin: 0 50px;
 }
-header ul a:hover{
+
+header ul a:hover {
     color: var(--color-preto);
     cursor: pointer;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--color-cinza-claro);
 }
-a:visited{
+
+a:visited {
     text-decoration: none;
     color: var(--color-cinza-claro);
 }
-#header-right{
-    display: flex; 
+
+#header-right {
+    display: flex;
 }
-nav{
+
+nav {
     display: grid;
     margin-top: 5px;
-    width: 10%;
     height: 100vh;
     border-top-right-radius: 15px;
     background-color: var(--color-azul);
     justify-items: center;
     text-align: center;
+    grid-column: 1;
 }
-nav dt{
-    background-color: var(--color-preto);
-    margin-top: 100px;
-    height: 20px;
-    width: 150px;
-    align-content: center;
-    justify-items: center;
-    text-align: center;
-    border-top-right-radius: 10%;    
-}
-nav .ao_vivo{
+
+nav div {
     background-color: var(--color-preto);
     margin-top: 100px;
     height: 30px;
@@ -74,26 +81,85 @@ nav .ao_vivo{
     align-content: center;
     justify-items: center;
     text-align: center;
-    border-radius: 10%;    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
 }
-nav dd{
+
+nav a.button {
+    display: inline-block;
     background-color: var(--color-preto);
     height: 50px;
     width: 150px;
     text-align: center;
     align-content: center;
     justify-items: center;
-    border-bottom-right-radius: 10%;    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     font-size: 12px;
-}
-a{
-    text-decoration: none;
+    line-height: 50px;
     color: var(--color-cinza-claro);
 }
-a:visited{
-    text-decoration: none;
-    color: var(--color-cinza-claro);
+
+nav a#ao_vivo {
+    border-radius: 10px;
 }
-hr{
-    border: 1px solid var(--color-azul);
+
+nav a.button:hover {
+    color: var(--color-preto);
+    background-color: var(--color-azul-claro);
+    transition: 0.5s;
 }
+
+p.embates{
+    margin-bottom: 7px;
+}
+
+main {
+    grid-column: 2;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    gap: 0; /* Remove o gap entre colunas */
+    padding: 0;
+}
+
+.image-propaganda {
+    width: 1200px;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image-propaganda, .image-medina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Adiciona espaçamento interno */
+}
+
+.image-propaganda img, .image-medina img {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
+    height: auto;
+    object-fit: contain;
+    max-width: 90%; /* Ajusta para dar um pouco de respiro */
+}
+.image-medina {
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_with_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.ao_vivo_icon {
+    color: darkred;
+}
+
