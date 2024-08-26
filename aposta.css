@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 :root {
     --color-azul-claro: #80b9c1;
     --color-verde-azulado: #387b83;
@@ -14,18 +9,9 @@
     --color-azul: #1c2a36;
 }
 
-body {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: 1fr 8fr;
-    min-height: 100vh;
-    margin: 0;
+body{
     background-color: var(--color-preto);
-    color: var(--color-cinza-claro);
-    font-family: "Roboto", sans-serif;
 }
-
-
 header {
     background-color: var(--color-azul);
     grid-column: 1 / -1;
@@ -64,9 +50,8 @@ a:visited {
 
 nav {
     display: grid;
-    margin-top: 5px;
     height: 100vh;
-    border-top-right-radius: 15px;
+    margin: 10px 0;
     background-color: var(--color-azul);
     justify-items: center;
     text-align: center;
@@ -115,48 +100,26 @@ p.embates{
 }
 
 main {
-    grid-column: 2;
     display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-rows: auto;
     height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    gap: 0; /* Remove o gap entre colunas */
-    padding: 0;
 }
-
-.image-propaganda {
-    width: 1200px;
-    grid-column: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.image-propaganda{
+    background-image: url(./img/img-baleia.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-
-.image-propaganda, .image-medina {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px; /* Adiciona espaçamento interno */
+.image-medina{
+    background-image: url(./img/medina_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.image-propaganda img, .image-medina img {
-    width: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
-    height: auto;
-    object-fit: contain;
-    max-width: 90%; /* Ajusta para dar um pouco de respiro */
-}
-.image-medina {
-    grid-column: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .icon_with_text {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
 }
 
 .ao_vivo_icon {
