@@ -11,6 +11,8 @@
 
 body{
     background-color: var(--color-preto);
+    color: var(--color-cinza-claro);
+    font-family: "Roboto", sans-serif;
 }
 header {
     background-color: var(--color-azul);
@@ -106,13 +108,13 @@ main {
     height: 100vh;
 }
 .image-propaganda{
-    background-image: url(./img/img-baleia.webp);
+    background-image: url(../img/propaganda.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .image-medina{
-    background-image: url(./img/medina_background.png);
+    background-image: url(../img/medina_background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --color-azul-claro: #80b9c1;
+    --color-verde-azulado: #387b83;
+    --color-cinza: #97a3ad;
+    --color-cinza-claro: #d6dce5;
+    --color-preto: #131c24;
+    --color-azul: #1c2a36;
+}
+
+body{
+    background-color: var(--color-preto);
+    color: var(--color-cinza-claro);
+    font-family: "Roboto", sans-serif;
+}
+header {
+    background-color: var(--color-azul);
+    grid-column: 1 / -1;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+header ul li, #logo {
+    font-size: 22px;
+    margin: 0 50px;
+}
+
+header ul a:hover {
+    color: var(--color-preto);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-cinza-claro);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--color-cinza-claro);
+}
+
+#header-right {
+    display: flex;
+}
+
+nav {
+    display: grid;
+    height: 100vh;
+    margin: 10px 0;
+    background-color: var(--color-azul);
+    justify-items: center;
+    text-align: center;
+    grid-column: 1;
+}
+
+nav div {
+    background-color: var(--color-preto);
+    margin-top: 100px;
+    height: 30px;
+    width: 150px;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
+}
+
+nav a.button {
+    display: inline-block;
+    background-color: var(--color-preto);
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 12px;
+    line-height: 50px;
+    color: var(--color-cinza-claro);
+}
+
+nav a#ao_vivo {
+    border-radius: 10px;
+}
+
+nav a.button:hover {
+    color: var(--color-preto);
+    background-color: var(--color-azul-claro);
+    transition: 0.5s;
+}
+
+p.embates{
+    margin-bottom: 7px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-rows: auto;
+    height: 100vh;
+}
+.image-propaganda{
+    background-image: url(../img/propaganda.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image-medina{
+    background-image: url(../img/medina_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.icon_with_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ao_vivo_icon {
+    color: darkred;
+}
+
