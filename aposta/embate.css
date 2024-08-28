@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
-
 :root {
     --color-azul-claro: #80b9c1;
     --color-verde-azulado: #387b83;
@@ -8,46 +7,69 @@
     --color-preto: #131c24;
     --color-azul: #1c2a36;
 }
-
 body{
     background-color: var(--color-preto);
     color: var(--color-cinza-claro);
     font-family: "Roboto", sans-serif;
 }
-header {
+header{
     background-color: var(--color-azul);
-    grid-column: 1 / -1;
-}
-
-header ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    padding: 30px 0;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-header ul li, #logo {
-    font-size: 22px;
+#header-right, #header-center, #logo{
+    flex: 1;
+}
+#header-right, #logo{
     margin: 0 50px;
 }
-
-header ul a:hover {
-    color: var(--color-preto);
-    cursor: pointer;
+#header-right a{
+    font-size: 20px;
+    background-color: var(--color-verde-azulado);
+    color: var(--color-cinza-claro);
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin: 0 15px;
+}
+#header-right a:hover{
+    background-color: var(--color-azul-claro);
+}
+#header-right{
+    text-align: right;
+}
+#header-center{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+}
+#header-center a{
+    border: 2px solid varvar(--color-verde-azulado);
+    padding: 7px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+#header-center a:hover{
+    transition: 0.5s;
+    text-decoration: underline;
+}
+#logo{
+    text-align: left;
+    
 }
 
-a {
+a{
     text-decoration: none;
     color: var(--color-cinza-claro);
 }
-
-a:visited {
+a:visited{
     text-decoration: none;
     color: var(--color-cinza-claro);
-}
-
-#header-right {
-    display: flex;
 }
 
 nav {
