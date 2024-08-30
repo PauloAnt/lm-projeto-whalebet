@@ -20,7 +20,7 @@ body{
     overflow-x: hidden;
 }
 header{
-    background: linear-gradient(135deg, var(--color-azul) 0%, var(--color-verde-azulado) 100%);  
+    background-color: var(--color-azul);
     display: flex;
     list-style: none;
     justify-content: space-between;
