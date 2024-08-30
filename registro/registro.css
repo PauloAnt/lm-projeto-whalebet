@@ -1,18 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root {
+* {
+    box-sizing: border-box;
+}
+
+:root{
     --color-azul-claro: #80b9c1;
     --color-verde-azulado: #387b83;
     --color-cinza: #97a3ad;
     --color-cinza-claro: #d6dce5;
-    --color-preto: #131c24;
+    --color-preto:#131c24;
     --color-azul: #1c2a36;
 }
 body{
     background-color: var(--color-preto);
     color: var(--color-cinza-claro);
     font-family: "Roboto", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
 }
+
+/* HEADER */
+
 header{
     background-color: var(--color-azul);
     display: flex;
@@ -24,8 +33,23 @@ header{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.c1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
 #header-right, #header-center, #logo{
-    flex: 1;
+    flex: ;
 }
 #header-right, #logo{
     margin: 0 50px;
@@ -63,7 +87,6 @@ header{
     text-align: left;
     
 }
-
 a{
     text-decoration: none;
     color: var(--color-cinza-claro);
@@ -73,87 +96,90 @@ a:visited{
     color: var(--color-cinza-claro);
 }
 
-nav {
-    display: grid;
-    height: 100vh;
-    margin: 10px 0;
-    background-color: var(--color-azul);
-    justify-items: center;
-    text-align: center;
-    grid-column: 1;
-}
+/* MAIN */
 
-nav div {
-    background-color: var(--color-preto);
-    margin-top: 100px;
-    height: 30px;
-    width: 150px;
-    align-content: center;
-    justify-items: center;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;  
-}
-
-nav a.button {
-    display: inline-block;
-    background-color: var(--color-preto);
-    height: 50px;
-    width: 150px;
-    text-align: center;
-    align-content: center;
-    justify-items: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-size: 12px;
-    line-height: 50px;
-    color: var(--color-cinza-claro);
-}
-
-nav a#ao_vivo {
+#entrar {
+    width: 5%;
+    padding: 10px;
+    background-color: #387b83;
+    border: none;
     border-radius: 10px;
-}
-
-nav a.button:hover {
-    color: var(--color-preto);
-    background-color: var(--color-azul-claro);
+    margin: 10px;
+    cursor: pointer;
     transition: 0.5s;
 }
 
-p.embates{
-    margin-bottom: 7px;
+.main {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 310px;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 200px 1fr 300px;
-    grid-template-rows: auto;
-    height: 100vh;
+.c1 {
+    color: white;
 }
 
-.image-medina{
-    background-image: url(../img/medina_background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+
+#bc {
+    width: 60%;
+    height: 50px;
+    font-size: 18px;
+    background-color: #131c24;
+    border: none;
+    color: #97a3ad;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
 }
-.icon_with_text {
+
+#bc:hover {
+    color: white;
+}
+
+#texto {
+    width: 100%;
+    height: 45px;
+    background-color: #1c2a36;
+    color: white;
+}
+
+.form {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.ao_vivo_icon {
-    color: darkred;
-}
+/* FOOTER */
 
-.ao_vivo{
-    display: grid;
+footer{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-azul);
+    height: 150px;
+}
+footer p{
+    margin: 5px;
 }
 
-.ao_vivo iframe{
-    width: 100dvh;
-    height: 60dvh;
-}
+/*background-color: #131c24;
+border: 2px solid #387b83;
+padding: 10px;
+border-radius: 10px;
 
+margin-top: 2%;
+width: 20%;
+padding: 5px;
+*/
+
+
+
+/* background: 
+registro8-back
