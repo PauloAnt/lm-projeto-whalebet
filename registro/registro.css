@@ -23,7 +23,7 @@ body{
 /* HEADER */
 
 header{
-    background-color: var(--color-azul);
+    background: linear-gradient(135deg, var(--color-azul) 0%, var(--color-verde-azulado) 100%);  
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -32,7 +32,6 @@ header{
     font-size: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
 .c1 {
     display: flex;
     flex-direction: column;
