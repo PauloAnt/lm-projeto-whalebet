@@ -13,12 +13,8 @@ body {
     background-color: var(--color-preto);
     color: var(--color-cinza-claro);
     font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-    margin: 0;
-}
 
+}
 header {
     background: linear-gradient(135deg, var(--color-azul) 0%, var(--color-verde-azulado) 100%);
     display: flex;
@@ -204,6 +200,7 @@ main {
     background-repeat: no-repeat;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    height: 163vh;
 }
 
 div.group-s2 {
@@ -331,9 +328,11 @@ footer{
     text-align: center;
     background-color: var(--color-azul);
     height: 150px;
+    margin-top: 450px;
 }
 footer p{
     margin: 5px;
+    
 }
 
 /* OUTROS */
@@ -348,4 +347,94 @@ footer p{
 hr{
     border: 1px solid var(--color-verde-azulado);
     width: 100%;
+}
+
+
+
+@media screen and (max-width: 1200px){
+    main{
+        display: grid;
+        grid-template-rows: 1fr 1fr; 
+        
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);   
+    }
+    #header-right{
+        display: flex;
+        grid-column: 2;
+        justify-content: end;
+        margin: 10px 0;
+    }
+    #header-center{
+        text-align: right;
+    }
+    #logo{
+        grid-row: 1/3;
+    }
+
+    .s1-info {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+    }
+
+    .s2-embates{
+        display: block;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    div.menu-apostas{
+        height: auto;
+    }
+    div.menu-apostas button{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    div.jogadores {
+        display: grid;
+        column-gap: 25px;
+        grid-row: 1;
+        padding-left: 10px;
+        grid-column: 1;
+    }
+    div.jogadores p{
+        font-size: 30px;
+    }
+    .image-medina{
+        display : none;
+    }
+    
+    .image-onda{
+        display: none;
+    }
+
+
+
+    .image-combate img{
+        width: 70%;
+    }
+    
+    footer{
+        margin-top: 80px;
+    }
+}
+
+/* celular screen */
+
+@media screen and (max-width: 800px){
+
+    .s1-content{
+        display: block;
+    }
+
+    #embates{
+        height: 450px;
+    }
+    
+    div.group-s2{
+        margin-top: 150px;
+    }
 }

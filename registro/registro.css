@@ -23,9 +23,8 @@ body{
 /* HEADER */
 
 header{
-    background-color: var(--color-azul);
+    background: linear-gradient(135deg, var(--color-azul) 0%, var(--color-verde-azulado) 100%);  
     display: flex;
-    flex-flow: row wrap;
     list-style: none;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +89,6 @@ section{
     padding: 7px 10px;
     border-radius: 5px;
     transition: 0.5s;
-    color: #387b83;
 }
 #header-center a:hover{
     transition: 0.5s;

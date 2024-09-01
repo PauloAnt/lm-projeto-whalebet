@@ -22,7 +22,7 @@ body{
 /* HEADER */
 
 header{
-    background-color: var(--color-azul);
+    background: linear-gradient(135deg, var(--color-azul) 0%, var(--color-verde-azulado) 100%);  
     display: flex;
     list-style: none;
     justify-content: space-between;
