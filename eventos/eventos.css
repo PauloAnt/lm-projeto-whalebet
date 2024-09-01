@@ -249,6 +249,10 @@ input:focus {
 
 /* RESPONSIVIDADE */
 @media screen and (max-width: 1000px){
+    .box-event{
+        height: 30vh;
+    }
+
     main .eventos-section{
         display: flex;
         flex-direction: column;
@@ -265,6 +269,7 @@ input:focus {
     }
     #header-center{
         text-align: right;
+        margin: 0 10px;
     }
     #logo{
         grid-row: 1/3;

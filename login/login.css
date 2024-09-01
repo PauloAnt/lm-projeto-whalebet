@@ -233,6 +233,7 @@ footer p{
     }
     #header-center{
         text-align: right;
+        margin: 0 10px;
     }
     #logo{
         grid-row: 1/3;
