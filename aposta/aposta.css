@@ -106,7 +106,6 @@ main {
     justify-content: center;
     align-content: center;
     text-align: center;
-    margin-top: 70px;
 }
 
 .image-medina {
@@ -359,9 +358,7 @@ hr{
 }
 
 
-#logo{
-    border-radius: 50%;
-}
+
 @media screen and (max-width: 1200px){
     main{
         display: grid;
@@ -387,9 +384,6 @@ hr{
         grid-row: 1/3;
     }
 
-    .s1-content{
-        margin-top: 70px;
-    }
     .s1-info {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -443,7 +437,6 @@ hr{
 
     .s1-content{
         display: block;
-        margin-top: 30px;
     }
 
     #embates{
