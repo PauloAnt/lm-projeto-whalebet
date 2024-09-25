@@ -393,7 +393,6 @@ input[type="checkbox"]:checked + label + .box-support{
 .box-support-input{
     width: 100%;
     height: 80%;
-    padding: 6px;
     border-radius: 5px;
     border: none;
     font-size: 15px;
