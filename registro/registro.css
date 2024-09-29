@@ -28,9 +28,6 @@
     max-width: 600px;
 }
 
-.mt-1 {
-    margin-top: 1% 
-}
 .br {
     border-radius: 10px;
 }
@@ -41,7 +38,6 @@
 .fs2 {
     font-size: 20px;
 }
-
 
 .bg-hf.br{
     width: 100%; 
