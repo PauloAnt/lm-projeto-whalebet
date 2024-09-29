@@ -45,7 +45,7 @@
 
 .bg-hf.br{
     width: 100%; 
-    max-width: 400px; 
+    max-width: 500px; 
     margin: auto; 
     padding: 10px; 
 }
@@ -78,11 +78,11 @@
 
 @keyframes Aumentar {
     from, to{
-        scale: 105%
+        scale: 110%
     }
 
     50% {
-        scale: 150%
+        scale: 170%
     }
 }
 
