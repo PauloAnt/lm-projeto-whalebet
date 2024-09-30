@@ -288,7 +288,7 @@ input[type="checkbox"]:checked + label + .box-support{
     bottom: 80px;
     right: 20px;
     width: 30%;
-    height: 50%;
+    height: auto;
     background-color: var(--color-azul-claro);
     color: var(--color-azul);
     padding: 15px;
