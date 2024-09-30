@@ -393,8 +393,8 @@ input[type="checkbox"]:checked + label + .box-support{
     position: fixed;
     bottom: 80px;
     right: 20px;
-    width: 300px;
-    height: 300px;
+    width: 30%;
+    height: 50%;
     background-color: var(--color-azul-claro);
     color: var(--color-azul);
     padding: 15px;
@@ -412,6 +412,7 @@ input[type="checkbox"]:checked + label + .box-support{
 .box-support-input{
     width: 100%;
     height: 80%;
+    padding: 6px;
     border-radius: 5px;
     border: none;
     font-size: 15px;
@@ -421,25 +422,24 @@ input[type="checkbox"]:checked + label + .box-support{
     width: 100%;
     justify-content: end;
 }
-.btn-send span{
-    color: var(--color-preto);
+.box-support span{
     cursor: pointer;
     text-align: right;
     font-size: 25px;
-    margin: 5px 0;
     transition: 0.2s;
+    color: var(--color-preto);
 }
-.btn-send span:hover{
+.box-support span:hover{
     color: var(--color-cinza-claro);
     transition: 0.2s;
 }
 
 textarea{
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
     resize: none;
     outline: none;
 }
+
 
 .effect-shadow{
     text-shadow: 2px 2px 5px rgba(7, 64, 97, 0.979);
@@ -522,6 +522,10 @@ hr{
     footer{
         margin-top: 80px;
     }
+
+    .box-support{
+        width: 40%;
+    }
 }
 
 /* celular screen */
@@ -538,5 +542,9 @@ hr{
     
     div.group-s2{
         margin-top: 150px;
+    }
+
+    .box-support{
+        width: 60%;
     }
 }
